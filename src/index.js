@@ -40,7 +40,7 @@ export const getProtocol = (request) => (
       : 'HTTP/1.0'
 )
 
-export const getStringFromTime = (now = Date.now()) => moment(now).strftime('%d/%b/%Y:%H:%M:%S %z')
+export const getStringFromTime = (date = new Date()) => moment(date).strftime('%d/%b/%Y:%H:%M:%S %z')
 
 export function hasOptionsIp (options = {}) {
   if (Reflect.has(options, 'ip')) {

@@ -2,6 +2,8 @@ import debug from 'debug'
 
 import sinon from 'sinon'
 
+import moment from 'moment-strftime'
+
 import {
   expect
 } from 'chai'
@@ -209,9 +211,14 @@ describe('@modernpoacher/deps/common/git', () => {
 
   describe('`toCommonLog()`', () => {
     let mockDate
+    let strftime
 
     beforeEach(() => {
-      mockDate = sinon.useFakeTimers(new Date(1970, 0, 1).getTime())
+      const date = new Date(0)
+
+      mockDate = sinon.useFakeTimers(date)
+      strftime = moment(date)
+        .strftime('%d/%b/%Y:%H:%M:%S %z')
     })
 
     afterEach(() => {
@@ -221,14 +228,14 @@ describe('@modernpoacher/deps/common/git', () => {
     describe('With a request', () => {
       it('returns a string', () => {
         return expect(toCommonLog(REQUEST))
-          .to.equal('MOCK REMOTE ADDRESS - MOCK ID [01/Jan/1970:00:00:00 +0100] "MOCK METHOD MOCK URL HTTP/MOCK HTTP VERSION" 0 0')
+          .to.equal(`MOCK REMOTE ADDRESS - MOCK ID [${strftime}] "MOCK METHOD MOCK URL HTTP/MOCK HTTP VERSION" 0 0`)
       })
     })
 
     describe('Without a request', () => {
       it('returns a string', () => {
         return expect(toCommonLog())
-          .to.equal('- - - [01/Jan/1970:00:00:00 +0100] "- - -" - -')
+          .to.equal(`- - - [${strftime}] "- - -" - -`)
       })
     })
   })
@@ -589,9 +596,14 @@ describe('@modernpoacher/deps/common/git', () => {
 
   describe('`getStringFromTime()`', () => {
     let mockDate
+    let strftime
 
     beforeEach(() => {
-      mockDate = sinon.useFakeTimers(new Date(1970, 0, 1).getTime())
+      const date = new Date(0)
+
+      mockDate = sinon.useFakeTimers(date)
+      strftime = moment(date)
+        .strftime('%d/%b/%Y:%H:%M:%S %z')
     })
 
     afterEach(() => {
@@ -599,22 +611,12 @@ describe('@modernpoacher/deps/common/git', () => {
     })
 
     it('returns a string', () => {
-      return expect(getStringFromTime(REQUEST))
-        .to.equal('01/Jan/1970:00:00:00 +0100')
+      return expect(getStringFromTime())
+        .to.equal(strftime)
     })
   })
 
   describe('`getRequestLine()`', () => {
-    let mockDate
-
-    beforeEach(() => {
-      mockDate = sinon.useFakeTimers(new Date(1970, 0, 1).getTime())
-    })
-
-    afterEach(() => {
-      mockDate.restore()
-    })
-
     describe('With a request', () => {
       it('returns a string', () => {
         return expect(getRequestLine(REQUEST))
