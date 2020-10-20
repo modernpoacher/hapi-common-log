@@ -15,6 +15,9 @@
     "Jonathan Perry <modernpoacher@modernpoacher.com> (Modern Poacher Limited)"
   ],
   "license": "ISC",
+  "engines": {
+    "node": ">=12.19.0"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:modernpoacher/hapi-common-log.git"
