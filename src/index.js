@@ -43,6 +43,10 @@ export const getProtocol = (request) => (
 export const getStringFromTime = (date = new Date()) => moment(date).strftime('%d/%b/%Y:%H:%M:%S %z')
 
 export function hasOptionsIp (options = {}) {
+  /*
+   *  log('hasOptionsIp')
+   */
+
   if (Reflect.has(options, 'ip')) {
     return !!(
       Reflect.get(options, 'ip')
@@ -53,6 +57,10 @@ export function hasOptionsIp (options = {}) {
 }
 
 export function getOptionsIp (options = {}) {
+  /*
+   *  log('getOptionsIp')
+   */
+
   const ip = Reflect.get(options, 'ip')
 
   return String(ip)
@@ -60,6 +68,10 @@ export function getOptionsIp (options = {}) {
 }
 
 export function getRequestLine (request) {
+  /*
+   *  log('getRequestLine')
+   */
+
   const method = hasRawReqMethod(request) ? getRawReqMethod(request) : '-'
   const url = hasRawReqUrl(request) ? getRawReqUrl(request) : '-'
   const protocol = hasProtocol(request) ? getProtocol(request) : '-'
@@ -68,7 +80,9 @@ export function getRequestLine (request) {
 }
 
 export default function toCommonLog (request) {
-  log('toCommonLog')
+  /*
+   *  log('toCommonLog')
+   */
 
   const remoteHost = hasInfoRemoteAddress(request) ? getInfoRemoteAddress(request) : '-'
   const userIdentifier = '-'
