@@ -1,6 +1,6 @@
 {
   "name": "@modernpoacher/hapi-common-log",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Transforms a Hapi request to a Common Log Format log line",
   "keywords": [
     "hapi",
@@ -60,7 +60,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^5.1.1",
     "gulp": "^4.0.2",
     "husky": "^7.0.4",
     "mocha": "^9.1.3",
