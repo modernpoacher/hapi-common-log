@@ -31,7 +31,7 @@ import toCommonLog, {
   getRequestLine
 } from '@modernpoacher/hapi-common-log'
 
-describe('@modernpoacher/deps/common/git', () => {
+describe('@modernpoacher/hapi-common-log', () => {
   const REQUEST = {
     raw: {
       req: {
