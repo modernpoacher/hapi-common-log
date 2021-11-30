@@ -9,7 +9,13 @@
 .eslintrc
 
 .gitignore
+.logs
+
+gulpfile.js
 
 # NPM
 .npmignore
 .npmrc
+
+# NVM
+.nvmrc
