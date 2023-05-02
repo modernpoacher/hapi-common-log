@@ -32,7 +32,8 @@
     "babel:watch": "npm run babel -- -w",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "test": "cross-env NODE_ENV=test mocha test --recursive -r @babel/register"
+    "test": "cross-env NODE_ENV=test mocha test --recursive -r @babel/register",
+    "prepare": "npx husky install && npm run build"
   },
   "dependencies": {
     "debug": "^4.3.4",
