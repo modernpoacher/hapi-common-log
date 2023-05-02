@@ -1,5 +1,5 @@
 import {
   postCommit
-} from '@sequencemedia/hooks'
+} from '@modernpoacher/hooks'
 
 export default postCommit()
