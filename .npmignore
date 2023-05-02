@@ -3,7 +3,6 @@
 .circleci
 .github
 
-.browserslistrc
 .editorconfig
 .eslintignore
 .eslintrc
