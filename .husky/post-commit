@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-cross-env DEBUG=@modernpoacher/hooks,@modernpoacher/hooks:* npm run build
+npx cross-env DEBUG=@modernpoacher/hooks,@modernpoacher/hooks:* npm run build
