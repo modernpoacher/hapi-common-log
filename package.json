@@ -32,10 +32,7 @@
     "babel:watch": "npm run babel -- -w",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "test": "cross-env NODE_ENV=test mocha test --recursive -r @babel/register",
-    "gulp": "gulp --color",
-    "pre-commit": "npm run lint && npm run test && npm run build && git add lib",
-    "post-commit": "cross-env DEBUG=@modernpoacher/hooks,@modernpoacher/hooks:* npm run gulp -- post-commit"
+    "test": "cross-env NODE_ENV=test mocha test --recursive -r @babel/register"
   },
   "dependencies": {
     "debug": "^4.3.4",
