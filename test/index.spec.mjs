@@ -29,9 +29,9 @@ import toCommonLog, {
   getProtocol,
   getStringFromTime,
   getRequestLine
-} from '@modernpoacher/hapi-common-log'
+} from '#hapi-common-log'
 
-describe('@modernpoacher/hapi-common-log', () => {
+describe('#hapi-common-log', () => {
   const REQUEST = {
     raw: {
       req: {

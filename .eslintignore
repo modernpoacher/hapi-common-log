@@ -1,4 +1,4 @@
 .circleci
 .github
-lib
+.husky
 node_modules
