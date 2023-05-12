@@ -1,8 +1,6 @@
 {
   "name": "@modernpoacher/hapi-common-log",
   "version": "1.0.559",
-  "main": "./src/index.mjs",
-  "type": "module",
   "description": "Transforms a Hapi request to a Common Log Format log line",
   "keywords": [
     "hapi",
@@ -11,8 +9,12 @@
     "format",
     "common log format"
   ],
-  "author": "Jonathan Perry <modernpoacher@modernpoacher.com> (Modern Poacher Limited)",
-  "contributors": ["Raquel Vélez <raquel@rckbt.me>"],
+  "main": "./src/index.mjs",
+  "type": "module",
+  "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
+  "contributors": [
+    "Raquel Vélez <raquel@rckbt.me>"
+  ],
   "license": "ISC",
   "engines": {
     "node": ">=18.5.0"
