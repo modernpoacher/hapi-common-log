@@ -30,32 +30,10 @@ const presets = [
   ]
 ]
 
-const plugins = [
-  '@babel/proposal-export-default-from',
-  '@babel/proposal-export-namespace-from',
-  [
-    '@babel/proposal-class-properties',
-    {
-      loose: false
-    }
-  ],
-  [
-    'module-resolver',
-    {
-      root: ['.'],
-      cwd: 'babelrc',
-      alias: {
-        '@modernpoacher/hapi-common-log': './src'
-      }
-    }
-  ]
-]
-
 module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
-    presets,
-    plugins
+    presets
   }
 }
