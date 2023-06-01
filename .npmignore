@@ -8,14 +8,15 @@
 .eslintignore
 .eslintrc
 
-.logs
-
 # NPM
 .npmignore
 .npmrc
 
 # NVM
 .nvmrc
+
+# Deps
+.depsrc
 
 # Git
 .gitattributes
