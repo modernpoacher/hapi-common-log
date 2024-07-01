@@ -14,7 +14,7 @@
   "author": {
     "name": "Jonathan Perry for Modern Poacher Limited",
     "email": "modernpoacher@modernpoacher.com",
-    "url": "http://modernpoacher.com"
+    "url": "https://modernpoacher.com"
   },
   "contributors": [
     "Raquel Vélez <raquel@rckbt.me>"
@@ -42,7 +42,7 @@
     "@babel/core": "^7.24.7",
     "@babel/eslint-parser": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
-    "@modernpoacher/hooks": "^1.0.479",
+    "@modernpoacher/hooks": "^1.0.480",
     "chai": "^5.1.1",
     "core-js": "^3.37.1",
     "cross-env": "^7.0.3",
