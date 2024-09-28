@@ -18,6 +18,9 @@
 # Deps
 .depsrc
 
+# Hooks
+.husky/hooks
+
 # Git
 .gitattributes
 .gitignore
