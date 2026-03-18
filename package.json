@@ -41,15 +41,15 @@
   "devDependencies": {
     "@babel/core": "^7.29.0",
     "@babel/eslint-parser": "^7.28.6",
-    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
     "chai": "^6.2.2",
-    "core-js": "^3.48.0",
+    "core-js": "^3.49.0",
     "cross-env": "^10.1.0",
     "eslint": "8.57.1",
     "eslint-config-standard": "^17.1.0",
     "husky": "^9.1.7",
     "mocha": "^11.7.5",
-    "sinon": "^21.0.2"
+    "sinon": "^21.0.3"
   },
   "imports": {
     "#hapi-common-log": "./src/index.mjs"
