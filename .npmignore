@@ -1,12 +1,15 @@
 .DS_Store
 
 .circleci
-.github
 .husky
 
 .editorconfig
 .eslintignore
 .eslintrc
+
+.github
+.gitattributes
+.gitignore
 
 # NPM
 .npmignore
@@ -20,7 +23,3 @@
 
 # Hooks
 .husky/hooks
-
-# Git
-.gitattributes
-.gitignore
